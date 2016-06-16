@@ -14,6 +14,15 @@ to add username
 ### git config --global user.email "YOUR_EMAIL_ADDRESS"
 to add email 
 
+### ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+generating ssh key. without ssh, you cannot clone git project. click enter then key in password & retype password. 
+
+### Enabled ssh-agent
+eval "$(ssh-agent -s)" ===== git-bash command
+eval $(ssh-agent -s) ==== other command
+
+### ssh-add ~/.ssh/id_rsa
+Add SSH key to the ssh-agent.
 
 ### git clone GIT_URL
 to clone a project in
